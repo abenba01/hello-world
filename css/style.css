@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300); /*This is where we get our font from*/   
+
+/*CSS comments are denoted a little differently than HTML comments*/
+
+* { /*This is a good thing to include at the top of every css document that you write. It makes sizing elements much easier.*/
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #93F1B6;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; 
+	color: #030303;
+}
+
+a:link {
+	color:#030303;
+	text-decoration: none; 
+}
+a:visited {
+	color:#030303;	
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+	color: #0ABEF2;
+}
+
+/*The "." means that "content" is an HTML class. every object with the content class will follow these rules*/
+.content {
+	/*max-width: 80%;*/
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255,255,255, .4);
+	padding: 1%;
+	overflow: hidden;
+}
+
+.header {
+	display: inline;
+	margin-left: 2%;
+}
+
+.header a {
+	color:#FFF;
+}
+
+/*"#" is used to denote an ID. it works the same way as classes but only a single object can have a given ID*/
+#Pic {
+	float:right;
+	margin-right: 10%;
+}
+
+.project{
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-top:0;
+	padding: 5px;
+	background-color: #F8941C;
+	width: 31%;
+	min-width: 400px;
+	float:left;
+ 	box-shadow: 1px 1px 3px #B97B3E;
+}
+
+.project img{
+	margin: 10px;
+	display:block;
+	width: 50%;
+	float: right;
+}
